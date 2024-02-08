@@ -4,13 +4,17 @@ import Mytable from './comp/Mytable'
 import Myimage from './comp/Myimage'
 import AllStudents from './comp/AllStudents'
 import Contact from './comp/Contact'
+import TodoList from './comp/TodoList'
+import TodoList2 from './comp/TodoList2'
 
 export default function App() {
   return (
     <div>
-      <AllStudents/>
+      <TodoList/>
+      <TodoList2/>
+      {/* <AllStudents/>
       <studentcard/>
-      <Contact/>
+      <Contact/> */}
       {/* <About/>
       <Mytable/>
       <Myimage/> */}
