@@ -4,11 +4,12 @@ import React, { useState } from 'react'
 export default function TodoList() {
   const [text, setText] = useState('')
   const [list, setList] = useState([])
-  
+
 
   function addItem() {
-    if (text === '') { return
-        
+    if (text === '') {
+      return
+
     }
     const newList = [...list]
     newList.push(text)
@@ -19,8 +20,6 @@ export default function TodoList() {
   function deleteAll() {
     setList([])
 
-    
-    
   }
 
   return (
@@ -28,13 +27,13 @@ export default function TodoList() {
       Todo:
       <input
         type="text"
-        
+
         value={text}
         onChange={(e) => setText(e.target.value)}
-      /> 
-      <button  onClick={addItem}>ADD</button>
-      <button  onClick={deleteAll}>deleteAll</button>
-      
+      />
+      <button onClick={addItem}>ADD</button>
+      <button onClick={deleteAll}>deleteAll</button>
+
       <hr />
       {/* {{JSON.stringify(list)}} */}
       <ol>
